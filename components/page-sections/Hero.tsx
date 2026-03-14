@@ -2,15 +2,9 @@
 
 import { personalInfo, socialLinks } from "@/lib/data";
 import { motion } from "framer-motion";
-import { Download, ArrowRight, User, Circle } from "lucide-react";
+import { Download, ArrowRight, User, Circle, ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
-
-    const downloadResumeButtonClick = () => {
-        console.log("download resume");
-
-    }
-
     return (
         <section id="home" className="min-h-[calc(100vh-4rem)] flex items-center py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -51,22 +45,22 @@ export default function Hero() {
                             </motion.p>
                         </div>
 
-                        {/* Download Resume & project button */}
+                        {/* Resume & project button */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.8, duration: 0.6 }}
                             className="flex flex-wrap gap-4"
                         >
-                            <motion.button
+                            <motion.a
                                 whileHover={{ scale: 1.05, y: -2 }}
                                 whileTap={{ scale: 0.95 }}
-                                onClick={downloadResumeButtonClick}
+                                href="/resume"
                                 className="border-4 border-black rounded-xl dark:border-white px-8 py-4 font-black text-lg bg-white dark:bg-background shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all inline-flex items-center gap-2"
                             >
-                                <Download className="w-6 h-6 font-bold" />
-                                Download Resume
-                            </motion.button>
+                                Resume
+                                <ArrowUpRight className="w-6 h-6 font-bold" />
+                            </motion.a>
 
                             <a
                                 href="#projects"
