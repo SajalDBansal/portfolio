@@ -1,14 +1,14 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 export const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
-    { name: "Skills", href: "#skills" },
-    { name: "Education", href: "#education" },
-    { name: "Blog", href: "#blog" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#home" },
+    { name: "About", href: "/#about" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Experience", href: "/#experience" },
+    { name: "Skills", href: "/#skills" },
+    { name: "Education", href: "/#education" },
+    { name: "Blog", href: "/#blog" },
+    { name: "Contact", href: "/#contact" },
 ];
 
 export const personalInfo = {

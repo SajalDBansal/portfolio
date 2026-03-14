@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
 import { navLinks } from "@/lib/data";
+import Link from "next/link";
 
 
 export default function Navbar() {
@@ -80,14 +81,14 @@ export default function Navbar() {
                     >
                         <div className="px-4 py-4 space-y-2">
                             {navLinks.map((link) => (
-                                <a
+                                <Link
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setMobileMenuOpen(false)}
                                     className="block retro-nav-link px-4 py-3 font-mono text-sm hover:bg-foreground hover:text-background transition-colors border-2 border-foreground"
                                 >
                                     {link.name}
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </motion.div>
