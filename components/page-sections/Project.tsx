@@ -15,7 +15,7 @@ export default function Projects() {
 
                 <div className="grid md:grid-cols-2 gap-8">
                     {projects.map((project, idx) => (
-                        <RetroWindow filename={project.filename} className="max-w-4xl m-auto" key={project.id}>
+                        <RetroWindow filename={project.filename} className="max-w-4xl m-auto h-full" key={project.id}>
                             <div className="p-0">
                                 <div className="relative h-48 overflow-hidden border-b-4 border-foreground">
                                     <Image

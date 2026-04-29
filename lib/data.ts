@@ -30,14 +30,47 @@ export const socialLinks = [
 export const projects = [
     {
         id: 1,
+        title: "Workflow Automation Engine (n8n-style)",
+        description:
+            " Built a scalable workflow automation engine using NestJS and Turborepo with Redis-backed queues and pub/sub, designing an independent execution engine to orchestrate distributed,event-driven workflows with reliable task processing.",
+        image: "/project/automate_n8n.png",
+        tech: ["Next.js", "Docker", "Prisma Postgres", "xyflow", "Redis", "Bun"],
+        link: "https://github.com/SajalDBansal/n8n-automation",
+        code: "https://github.com/SajalDBansal/n8n-automation",
+        filename: "2026-04-27-project.html",
+    },
+    {
+        id: 2,
         title: "HabitKit",
         description:
-            "A modern habit tracker for building positive habits with streak tracking and progress insights.",
+            "A modern, full‑stack habit tracking app designed to help you build better habits, one day at a time. It provides a focused dashboard, rich analytics, and a clean UI so you can see your progress, stay accountable, and tweak your routines quickly.",
         image: "/project/habitkit.png",
         tech: ["Next.js", "Prisma", "Postgres", "Recharts", "NextAuth"],
         link: "https://habitkit.sajaldbansal.com",
         code: "https://github.com/SajalDBansal/habitkit",
-        filename: "2026-03-08-project.html",
+        filename: "2026-02-08-project.html",
+    },
+    {
+        id: 3,
+        title: "Cryptex - Cryptocurrency Exchange",
+        description:
+            "A high-performance cryptocurrency exchange platform designed for speed, reliability, and scalability. It enables users to trade digital assets in real-time with a modern, responsive interface and robust backend infrastructure.",
+        image: "/project/cryptex.png",
+        tech: ["Node.js","Postgres", "Microservices", "Redis pub/sub", "Web Socket"],
+        link: "https://cryptex-exchange-xi.vercel.app/",
+        code: "https://github.com/SajalDBansal/cryptex-cryptobase-exchange",
+        filename: "2025-07-09-project.html",
+    },
+    {
+        id: 4,
+        title: "Jotion",
+        description:
+            "A full-featured Notion-style workspace and document editor built using modern web technologies. This project enables users to create, manage, and collaborate on rich documents and workspaces — just like the real Notion.",
+        image: "/project/jotion.png",
+        tech: ["Next.js", "Zustand", "Postgres","Blocknote", "NextAuth"],
+        link: "https://note-taking-app-pink-eight.vercel.app/",
+        code: "https://github.com/SajalDBansal/jotion-document-editor",
+        filename: "2025-04-22-project.html",
     }
 ];
 
@@ -85,7 +118,7 @@ export const experience = [
                 fullDescription:
                     "Built the frontend for a kids clinic management system with role-based dashboards for admins, doctors, staff, and patients, enabling appointment management and streamlined clinic workflows.",
                 tech: ["Next.js", "React", "TailwindCSS"],
-                link: "#",
+                link: "https://github.com/SajalDBansal/kidsclinic-hospital-management",
             },
             {
                 name: "Invento",
@@ -93,15 +126,7 @@ export const experience = [
                 fullDescription:
                     "Developed a system to manage inventory, cash flow, and creditor/debtor records, helping the business track stock, transactions, and financial data efficiently.",
                 tech: ["Next.js", "Node.js", "PostgreSQL", "TailwindCSS"],
-                link: "#",
-            },
-            {
-                name: "Landing Page",
-                description: "Product showcase website for a glass decor exporter.",
-                fullDescription:
-                    "Designed and built a modern landing page to showcase glass decorative products, improve brand presence, and enable potential buyers to connect through a contact section.",
-                tech: ["Next.js", "TailwindCSS", "Framer Motion"],
-                link: "#",
+                link: "https://github.com/SajalDBansal/invento",
             },
         ],
     },
